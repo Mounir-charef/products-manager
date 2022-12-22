@@ -1,4 +1,4 @@
-import './style.css'
+import './styles_output.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '../public/vite.svg'
 

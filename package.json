@@ -8,11 +8,14 @@
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "compile": "npx tailwindcss -i ./src/style.css -o ./src/styles_output.css",
+    "watch": "npx tailwindcss -i ./src/style.css -o ./src/styles_output.css --watch",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }

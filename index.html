@@ -3,11 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles_output.css" />
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <nav class="relative container mx-auto mt-3">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <a href="#">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="hidden md:flex gap-6">
+          <a href="#" class="hover:text-darkGrayishBlue transition">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue transition">Products</a>
+          <a href="#" class="hover:text-darkGrayishBlue transition">Careers</a>
+          <a href="#" class="hover:text-darkGrayishBlue transition">Community</a>
+          <a href="#" class="hover:text-darkGrayishBlue transition">About</a>
+        </div>
+        <a href="#" class="hidden md:block pt-2 px-6 pb-3 text-brightRed border border-brightRed bg-transparent
+        rounded-full hover:text-white hover:border-brightRedLight hover:bg-brightRedLight transition"> SIGN UP</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="container flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 "></div>
+      </section>
+    </main>
     <script type="module" src="src/main.ts"></script>
   </body>
 </html>
