@@ -5,17 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Vite + TS</title>
     <script type="module" crossorigin src="./assets/js/index-27ad079e.js"></script>
-    <link rel="stylesheet" href="./assets/css/index-ea3c4f11.css">
+    <link rel="stylesheet" href="./assets/css/index-7f69ec29.css">
   </head>
-  <body>
+  <body class="font-Be">
     <nav class="max-w-5/6 mt-2">
-      <div class="flex items-center mx-5 md:mx-16 justify-between">
+      <div class="flex items-center px-5 md:px-16 justify-between">
         <div class="pt-2 justify-self-start">
           <a href="#">
             <img src="./assets/img/logo-e5cbf81a.svg" alt="logo">
@@ -33,11 +31,11 @@
       </div>
     </nav>
 
-    <main class="mt-28">
-      <section id="hero" class="font-Be mx-16">
+    <main class="mt-24 space-y-20">
+      <section id="hero" class="px-5 md:px-16">
         <div class="flex flex-col-reverse md:flex-row items-center mt-10">
           <div class="flex flex-col gap-12 items-center flex-1 md:items-start">
-            <h1 class="text-veryDarkBlue font-bold text-4xl max-w-md text-center md:text-5xl md:text-left">
+            <h1 class="text-veryDarkBlue font-extrabold capitalize text-4xl max-w-md text-center md:text-5xl md:text-left">
               Bring everyone together to build better products.
             </h1>
             <p class="text-darkGrayishBlue max-w-sm text-center md:text-left">
@@ -46,10 +44,87 @@
             <a href="#" class="hover:animate-bouncy pt-2 px-6 pb-3 text-brightRed border border-brightRed bg-transparent
         rounded-full hover:text-white hover:border-brightRedLight hover:bg-brightRedLight transition w-fit">Get Started</a>
           </div>
-<!--          image-->
+          <!--image-->
           <div class="flex-1 flex justify-center">
             <img src="./assets/img/illustration-intro-ed8c77b7.svg" alt="illustration">
           </div>
+        </div>
+      </section>
+      <!--features-->
+      <section class="px-5 md:px-16">
+        <div class="flex flex-col gap-12 md:flex-row">
+<!--          what's the diff-->
+          <div class="flex flex-col items-center md:items-start gap-8 flex-1">
+            <h2 class="max-w-md text-4xl font-extrabold text-center text-veryDarkBlue md:text-left">
+              What’s different about Manage?
+            </h2>
+            <p class="text-darkGrayishBlue max-w-sm text-center md:text-left">
+              Manage provides all the functionality your team needs,
+              without the
+              complexity. Our software is tailor-made for modern digital product
+              teams.
+            </p>
+          </div>
+<!--          other tasks-->
+          <div class="flex flex-col flex-1 gap-20">
+            <div class="flex flex-col gap-3 md:flex-row">
+              <div class="rounded-full bg-veryPaleRed md:bg-transparent">
+                <div class="flex items-center gap-2">
+                  <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">01</div>
+                  <h3 class="text-lg font-medium text-darkBlue md:hidden">
+                    Track company-wide progress
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold text-darkBlue md:block">
+                  Track company-wide progress
+                </h3>
+                <p class="text-darkGrayishBlue">
+                  See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3 md:flex-row">
+              <div class="rounded-full bg-veryPaleRed md:bg-transparent">
+                <div class="flex items-center gap-2">
+                  <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">02</div>
+                  <h3 class="text-lg font-medium text-darkBlue md:hidden">
+                    Advanced built-in reports
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold text-darkBlue md:block">
+                  Advanced built-in reports
+                </h3>
+                <p class="text-darkGrayishBlue">
+                  Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3 md:flex-row">
+              <div class="rounded-full bg-veryPaleRed md:bg-transparent">
+                <div class="flex items-center gap-2">
+                  <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">03</div>
+                  <h3 class="text-lg font-medium text-darkBlue md:hidden">
+                    Everything you need in one place
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold text-darkBlue md:block">
+                  Everything you need in one place
+                </h3>
+                <p class="text-darkGrayishBlue">
+                  Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.                </p>
+              </div>
+            </div>
+          </div>
+
+
+<!--         end tasks -->
         </div>
       </section>
     </main>
