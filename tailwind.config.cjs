@@ -22,6 +22,21 @@ module.exports = {
         veryDarkBlue : 'hsl(233, 12%, 13%)',
         veryPaleRed : 'hsl(13, 100%, 96%)',
         veryLightGray : 'hsl(0, 0%, 98%)',
+      },
+      keyframes: {
+        wiggle_it : {
+          '0-100%' : {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+          },
+          "50%" : {
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
+          }
+        }
+      },
+      animation: {
+        'bouncy' : 'wiggle_it 2s ease infinite'
       }
     },
   },
