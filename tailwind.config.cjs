@@ -10,12 +10,13 @@ module.exports = {
       xl : '1440px'
     },
     fontFamily : {
-      'Be' : ['Be Vietnam Pro', 'sans-serif']
+      'Be' : ['Chivo Mono', 'monospace']
     },
     extend: {
       colors : {
         brightRed : 'hsl(12, 88%, 59%)',
         brightRedLight : 'hsl(12, 88%, 69%)',
+        brightRedBg : 'hsl(13,100%,85%)',
         brightRedSupLight : 'hsl(12, 88%, 95%)',
         darkBlue : 'hsl(228, 39%, 23%)',
         darkGrayishBlue : 'hsl(227, 12%, 61%)',
@@ -25,7 +26,7 @@ module.exports = {
       },
       keyframes: {
         wiggle_it : {
-          '0-100%' : {
+          '0%, 100%' : {
             transform: 'translateY(0)',
             animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
           },

@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% -25%;
+}
+
+#cte {
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 576px){
+    body{
+        background-position: 50px -50px;
+        background-size: 500px;
+    }
+    #cte {
+        background-image: url("images/bg-simplify-section-mobile.svg");
+    }
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all .5s;
+    position: relative;
+}
+
+.hamburger:hover {
+    rotate: 360deg;
+}
+
+.open {
+    display: flex;
+}
