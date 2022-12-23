@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Vite + TS</title>
-    <script type="module" crossorigin src="./assets/js/index-27ad079e.js"></script>
-    <link rel="stylesheet" href="./assets/css/index-2c55ce1f.css">
+    <script type="module" crossorigin src="./assets/js/index-42603f4d.js"></script>
+    <link rel="stylesheet" href="./assets/css/index-2fcbf487.css">
   </head>
   <body class="font-Be">
-    <nav class="max-w-5/6 mt-2">
+    <nav class="relative max-w-5/6 mt-2">
       <div class="flex items-center px-5 md:px-16 justify-between">
-        <div class="pt-2 justify-self-start">
+        <div class="pt-2">
           <a href="#">
             <img src="./assets/img/logo-e5cbf81a.svg" alt="logo">
           </a>
@@ -26,6 +26,19 @@
           <a href="#" class="hover:text-darkGrayishBlue transition">Community</a>
           <a href="#" class="hover:text-darkGrayishBlue transition">About</a>
         </div>
+        <!-- Hambugeeer Iconu -->
+        <div class="closed">
+          <div id="menu" class="absolute flex flex-col items-center self-end hidden py-8 mt-10 gap-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#" class="hover:text-darkGrayishBlue transition">Pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue transition">Products</a>
+            <a href="#" class="hover:text-darkGrayishBlue transition">Careers</a>
+            <a href="#" class="hover:text-darkGrayishBlue transition">Community</a>
+            <a href="#" class="hover:text-darkGrayishBlue transition">About</a>
+          </div>
+        </div>
+        <button id="btn" class="hamburger md:hidden focus:outline-none">
+          <img src="./assets/img/icon-hamburger-0c2573b0.svg" alt="burger">
+        </button>
         <a href="#" class="hidden hover:animate-bouncy md:block pt-2 px-4 lg:px-6 pb-3 text-brightRed border border-brightRed bg-transparent
         rounded-full hover:text-white hover:border-brightRedLight hover:bg-brightRedLight transition"> SIGN UP</a>
       </div>
@@ -166,7 +179,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-brightRed">
+      <section id="cte" class="bg-brightRed">
         <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
           <h2 class="text-5xl font-bold leading-tight text-left text-white md:text-4xl md:max-w-xl">
             Simplify how your team works today.
@@ -178,43 +191,57 @@
       </section>
     </main>
     <footer class="bg-veryDarkBlue">
-      <div class="container flex flex-col-reverse justify-between px-6 py-10 gap-12 mx-auto md:flex-row md:gap-0">
+      <div class="container flex flex-col-reverse items-center justify-between px-6 py-10 gap-12 mx-auto md:flex-row">
         <div class="flex flex-1 flex-col-reverse items-center justify-between gap-12 md:flex-col ms:items-start">
           <div>
             <img src="./assets/img/logo_white-8422c610.svg" alt="logo">
           </div>
           <div class="flex justify-center gap-4">
             <a href="#">
-              <img src="./assets/img/icon-facebook-59a06be6.svg" alt="fb" class="h-4">
+              <img src="./assets/img/icon-facebook-59a06be6.svg" alt="fb" class="h-8 md:h-4">
             </a>
             <a href="#">
-              <img src="./assets/img/icon-youtube-b0cc86fd.svg" alt="fb" class="h-4">
+              <img src="./assets/img/icon-youtube-b0cc86fd.svg" alt="fb" class="h-8 md:h-4">
             </a>
             <a href="#">
-              <img src="./assets/img/icon-instagram-14afdaea.svg" alt="fb" class="h-4">
+              <img src="./assets/img/icon-instagram-14afdaea.svg" alt="fb" class="h-8 md:h-4">
             </a>
             <a href="#">
-              <img src="./assets/img/icon-twitter-f8cbb34e.svg" alt="fb" class="h-4">
+              <img src="./assets/img/icon-twitter-f8cbb34e.svg" alt="fb" class="h-8 md:h-4">
             </a>
             <a href="#">
-              <img src="./assets/img/icon-pinterest-b07d28d7.svg" alt="fb" class="h-4">
+              <img src="./assets/img/icon-pinterest-b07d28d7.svg" alt="fb" class="h-8 md:h-4">
             </a>
           </div>
         </div>
         <!-- List container -->
-        <div class="flex flex-1 flex-col gap-3 text-white">
-          <a href="#" class="hover:text-brightRed">Home</a>
-          <a href="#" class="hover:text-brightRed">Pricing</a>
-          <a href="#" class="hover:text-brightRed">Products</a>
-          <a href="#" class="hover:text-brightRed">About</a>
+        <div class="flex gap-12 flex-auto justify-center">
+          <div class="flex flex-1 flex-col gap-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Pricing</a>
+            <a href="#" class="hover:text-brightRed">Products</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+          </div>
+          <div class="flex flex-1 flex-col gap-3 text-white">
+            <a href="#" class="hover:text-brightRed">Careers</a>
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
         </div>
-        <div class="flex flex-1 flex-col gap-3 text-white">
-          <a href="#" class="hover:text-brightRed">Careers</a>
-          <a href="#" class="hover:text-brightRed">Community</a>
-          <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+        <div class="flex flex-col gap-8">
+          <form>
+            <div class="flex gap-3">
+              <input type="text" class="flex-2 px-8 py-2 rounded-full focus:outline-none" placeholder="Updated in your inbox">
+              <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Lolifmaster
+          </div>
         </div>
       </div>
-
     </footer>
     
   </body>
