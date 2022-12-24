@@ -1042,6 +1042,10 @@ button[data-active="true"] {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+
   .md\:block {
     display: block;
   }
