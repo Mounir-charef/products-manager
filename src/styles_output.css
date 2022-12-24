@@ -950,6 +950,25 @@ body {
   display: flex;
 }
 
+.hiddenL {
+  opacity: 0;
+  filter: blur(5px);
+  translate: -100% 0;
+  transition: all .5s ease;
+}
+
+@media (prefers-reduced-motion) {
+  .hiddenL {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  translate: 0;
+}
+
 button[data-active="true"] {
   background-color: hsl(12, 88%, 69%);
 }
