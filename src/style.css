@@ -47,6 +47,8 @@ button[data-active="true"] {
 
 @media (max-width: 768px) {
     .card[data-active="false"] {
-        display: none;
+        position: absolute;
+        opacity: 0;
+        translate: 0 -40%;
     }
 }

@@ -587,10 +587,6 @@ video {
   margin-top: -4rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .ml-12 {
   margin-left: 3rem;
 }
@@ -905,6 +901,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -954,7 +956,9 @@ button[data-active="true"] {
 
 @media (max-width: 768px) {
   .card[data-active="false"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    translate: 0 -40%;
   }
 }
 
