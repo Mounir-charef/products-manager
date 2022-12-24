@@ -32,14 +32,22 @@ buttons.forEach(button => button.addEventListener('click', e => {
     // @ts-ignore
     i = parseInt(e.target.getAttribute('data-index')) - 1;
     // @ts-ignore
-    e.target.setAttribute('data-active', 'true')
+    e.target.setAttribute('data-active', 'true');
+    resetTimeout()
 }))
 
-setInterval(() => {
-    i = (i + 1) % buttons.length;
-    removeActive(buttons[i])
-    buttons[i].setAttribute('data-active', 'true');
-}, 2500)
+let timer;
+
+const resetTimeout = () => {
+    window.clearTimeout(timer);
+    timer = setInterval(() => {
+        i = (i + 1) % buttons.length;
+        removeActive(buttons[i])
+        buttons[i].setAttribute('data-active', 'true');
+    }, 2500)
+}
+
+resetTimeout()
 
 const oberv = new IntersectionObserver((entries)=>{
     entries.forEach((entry) => {
