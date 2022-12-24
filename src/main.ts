@@ -4,7 +4,7 @@ const btn = document.getElementById('btn'),
     buttons = document.querySelectorAll('.butt'),
     cards = document.querySelectorAll('.card'),
     hiddenElems = document.querySelectorAll('.hiddenL');
-
+let i = 0;
 
 btn?.addEventListener('click', () => {
     menu.classList.toggle('open')
@@ -15,10 +15,10 @@ main?.addEventListener('click', () => {
 })
 
 // @ts-ignore
-const removeActive = e => {
+const removeActive = element => {
     buttons.forEach(button => button.setAttribute('data-active', 'false'))
     cards.forEach(card => {
-        if( card.getAttribute('data-index') === e.target.getAttribute('data-index')){
+        if( card.getAttribute('data-index') === element.getAttribute('data-index')){
             card.setAttribute('data-active', 'true')
         }
         else{
@@ -28,10 +28,18 @@ const removeActive = e => {
 }
 
 buttons.forEach(button => button.addEventListener('click', e => {
-    removeActive(e);
+    removeActive(e.target);
+    // @ts-ignore
+    i = parseInt(e.target.getAttribute('data-index')) - 1;
     // @ts-ignore
     e.target.setAttribute('data-active', 'true')
 }))
+
+setInterval(() => {
+    i = (i + 1) % buttons.length;
+    removeActive(buttons[i])
+    buttons[i].setAttribute('data-active', 'true');
+}, 2500)
 
 const oberv = new IntersectionObserver((entries)=>{
     entries.forEach((entry) => {

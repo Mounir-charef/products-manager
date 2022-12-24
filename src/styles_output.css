@@ -954,7 +954,7 @@ body {
   opacity: 0;
   filter: blur(5px);
   translate: -100% 0;
-  transition: all .5s ease;
+  transition: opacity .5s ease, filter .5s ease, translate .5s ease;
 }
 
 @media (prefers-reduced-motion) {
