@@ -595,6 +595,10 @@ video {
   display: none;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -606,6 +610,10 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .max-w-md {
@@ -781,9 +789,9 @@ video {
   padding-right: 3rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-8 {
@@ -814,6 +822,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -884,11 +897,15 @@ video {
   transition-duration: 150ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
   background-size: 800px;
-  background-position: 90% -25%;
+  background-position: 100% -10%;
 }
 
 #cte {
@@ -903,7 +920,7 @@ body {
   }
 
   #cte {
-    background-image: url("images/bg-simplify-section-mobile.svg");
+    background-image: url("../images/bg-simplify-section-mobile.svg");
   }
 }
 
@@ -915,12 +932,22 @@ body {
   position: relative;
 }
 
-.hamburger:hover {
+.hamburger:focus {
   rotate: 360deg;
 }
 
 .open {
   display: flex;
+}
+
+button[data-active="true"] {
+  background-color: hsl(12, 88%, 69%);
+}
+
+@media (max-width: 768px) {
+  .card[data-active="false"] {
+    display: none;
+  }
 }
 
 @keyframes wiggle_it {
@@ -996,6 +1023,10 @@ body {
     height: 1rem;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:max-w-xl {
     max-width: 36rem;
   }
@@ -1039,6 +1070,11 @@ body {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:text-left {

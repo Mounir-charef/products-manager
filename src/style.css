@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {scroll-behavior: smooth;}
 
 body {
     background-image: url("../images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-size: 800px;
-    background-position: 90% -25%;
+    background-position: 100% -10%;
 }
 
 #cte {
@@ -20,7 +21,7 @@ body {
         background-size: 500px;
     }
     #cte {
-        background-image: url("images/bg-simplify-section-mobile.svg");
+        background-image: url("../images/bg-simplify-section-mobile.svg");
     }
 }
 
@@ -32,10 +33,20 @@ body {
     position: relative;
 }
 
-.hamburger:hover {
+.hamburger:focus {
     rotate: 360deg;
 }
 
 .open {
     display: flex;
+}
+
+button[data-active="true"] {
+    background-color: hsl(12, 88%, 69%);
+}
+
+@media (max-width: 768px) {
+    .card[data-active="false"] {
+        display: none;
+    }
 }

@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="src/styles_output.css" />
     <title>Vite + TS</title>
   </head>
@@ -82,7 +85,7 @@
               <div class="rounded-full bg-veryPaleRed md:bg-transparent">
                 <div class="flex items-center gap-2">
                   <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">01</div>
-                  <h3 class="text-lg font-medium text-darkBlue md:hidden">
+                  <h3 class="text-base font-medium text-darkBlue md:hidden">
                     Track company-wide progress
                   </h3>
                 </div>
@@ -101,7 +104,7 @@
               <div class="rounded-full bg-veryPaleRed md:bg-transparent">
                 <div class="flex items-center gap-2">
                   <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">02</div>
-                  <h3 class="text-lg font-medium text-darkBlue md:hidden">
+                  <h3 class="text-base font-medium text-darkBlue md:hidden">
                     Advanced built-in reports
                   </h3>
                 </div>
@@ -119,7 +122,7 @@
               <div class="rounded-full bg-veryPaleRed md:bg-transparent">
                 <div class="flex items-center gap-2">
                   <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">03</div>
-                  <h3 class="text-lg font-medium text-darkBlue md:hidden">
+                  <h3 class="text-base font-medium text-darkBlue md:hidden">
                     Everything you need in one place
                   </h3>
                 </div>
@@ -141,8 +144,8 @@
           <h2 class="font-extrabold text-veryDarkBlue text-4xl">
             What's different about Manage?
           </h2>
-          <div class="flex flex-col mt-24 md:flex-row gap-24 md:gap-6">
-            <div class="flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1">
+          <div class="flex flex-col mt-24 md:flex-row gap-24 md:gap-6 carousel">
+            <div class="flex card flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1" data-index="1" data-active="true">
               <img src="images/avatar-anisha.png" alt="grgr" class="w-16 -mt-16">
               <h5 class="text-lg font-bold">Anisha Li</h5>
               <p class="text-darkGrayishBlue max-w-md text-center">
@@ -150,27 +153,35 @@
               </p>
             </div>
 
-            <div class="hidden md:flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1">
+            <div class="card  flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1" data-index="2" data-active="false">
               <img src="images/avatar-ali.png" alt="grgr" class="w-16 -mt-16">
               <h5 class="text-lg font-bold">Ali Bravo</h5>
               <p class="text-darkGrayishBlue max-w-md text-center">
                 “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”              </p>
             </div>
 
-            <div class="hidden md:flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1">
+            <div class="card flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1" data-index="3" data-active="false">
               <img src="images/avatar-richard.png" alt="grgr" class="w-16 -mt-16">
               <h5 class="text-lg font-bold">Richard Watts</h5>
               <p class="text-darkGrayishBlue max-w-md text-center">
                 “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”              </p>
             </div>
 
-            <div class="hidden md:flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1">
+            <div class="card flex flex-col items-center p-6 gap-6 rounded-lg bg-veryLightGray flex-1" data-index="4" data-active="false">
               <img src="images/avatar-shanai.png" alt="grgr" class="w-16 -mt-16">
               <h5 class="text-lg font-bold">Shanai Gough</h5>
               <p class="text-darkGrayishBlue max-w-md text-center">
                 “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”              </p>
             </div>
           </div>
+
+          <ul class="flex gap-3 justify-center mt-10">
+            <li><button class="butt border border-brightRed h-2 w-2 rounded-full md:hidden" data-active="true" data-index="1"></button></li>
+            <li><button class="butt border border-brightRed h-2 w-2 rounded-full md:hidden" data-active="false" data-index="2"></button></li>
+            <li><button class="butt border border-brightRed h-2 w-2 rounded-full md:hidden" data-active="false" data-index="3"></button></li>
+            <li><button class="butt border border-brightRed h-2 w-2 rounded-full md:hidden" data-active="false" data-index="4"></button></li>
+          </ul>
+
           <div class="my-16">
             <a href="#" class="hover:animate-bouncy pt-2 px-6 pb-3 text-brightRed border border-brightRed bg-transparent
         rounded-full hover:text-white hover:border-brightRedLight hover:bg-brightRedLight transition w-fit">Get Started</a>
@@ -189,7 +200,7 @@
       </section>
     </main>
     <footer class="bg-veryDarkBlue">
-      <div class="container flex flex-col-reverse items-center justify-between px-6 py-10 gap-12 mx-auto md:flex-row">
+      <div class=" flex flex-col-reverse items-center justify-between px-3 md:px-6 py-8 gap-12 md:flex-row md:w-full">
         <div class="flex flex-1 flex-col-reverse items-center justify-between gap-12 md:flex-col ms:items-start">
           <div>
             <img src="images/logo_white.svg" alt="logo">
@@ -229,7 +240,9 @@
         <div class="flex flex-col gap-8">
           <form>
             <div class="flex gap-3">
-              <input type="text" class="flex-2 px-8 py-2 rounded-full focus:outline-none" placeholder="Updated in your inbox">
+              <label>
+                <input type="text" class="flex-2 px-8 py-2 rounded-full focus:outline-none" placeholder="Updated in your inbox">
+              </label>
               <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
                 Go
               </button>
