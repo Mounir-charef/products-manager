@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-    color-scheme: light;
-}
+/*:root{*/
+/*    color-scheme: dark light;*/
+/*}*/
 
 html {scroll-behavior: smooth;}
 

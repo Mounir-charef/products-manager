@@ -907,9 +907,11 @@ video {
   transition-duration: 150ms;
 }
 
-:root{
-  color-scheme: light;
-}
+/*:root{*/
+
+/*    color-scheme: dark light;*/
+
+/*}*/
 
 html {
   scroll-behavior: smooth;
