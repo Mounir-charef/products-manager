@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" stroke-opacity="0">
 <path style="fill:#fefefe; stroke:none;" d="M0 0L0 200L200 200L200 0L0 0z"/>
 <path style="fill:#7c7c7c; stroke:none;" d="M53.6667 72.3333L54.3333 72.6667L53.6667 72.3333z"/>
 <path style="fill:#4d4d4d; stroke:none;" d="M53 73L53 127L55 127L55 73L53 73z"/>
