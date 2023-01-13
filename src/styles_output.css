@@ -599,6 +599,10 @@ video {
   display: none;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-2 {
   height: 0.5rem;
 }
